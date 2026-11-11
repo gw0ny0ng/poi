@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.0 — 2026-11-11
+
+- 생활·안전 시설(버스정류장·약국·병원·경찰·관공서·우체국·주차장) 정본 추가, 랜드마크 government·hospital 추가
+- `data/m.json`: 561 entries, sha256 `56815e5e91cd…`
+- `data/s.json`: 1,247 entries, sha256 `2ac5262b03ce…`
+- `data/p.json`: 5,253 entries, sha256 `437cd5b95132…`
+- `data/l.json`: 5,539 entries, sha256 `4deef6659508…`
+- `data/full/bus.json`: 67,026 entries, sha256 `a90627d46f11…`
+- `data/full/life.json`: 35,813 entries, sha256 `27a31eb82247…`
+
 ## v1.2.0 — 2026-11-11
 
 - 랜드마크(l.json) 추가, 사찰 면 추가, 소형 목록에서 랜드마크 중복 제거
