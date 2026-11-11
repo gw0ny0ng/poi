@@ -1,6 +1,6 @@
 {
   "name": "mtagging-poi",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "generated": "2026-11-11",
   "license": "ODbL-1.0",
   "licenseUri": "https://opendatacommons.org/licenses/odbl/1-0/",
@@ -22,13 +22,19 @@
     },
     {
       "path": "data/p.json",
-      "sha256": "9a6b19e1d941000f2a66a1453bccafe860333a624340fe899efb0bc30f8cac4a",
-      "count": 3014,
-      "bytes": 326967
+      "sha256": "437cd5b95132418768ca362a15a36b557fec919b759264597fe40b18fc82bb90",
+      "count": 5253,
+      "bytes": 569687
+    },
+    {
+      "path": "data/l.json",
+      "sha256": "50ac9717e580c53b819cef967155b976c2969404fa376fe3b972944c1bef2121",
+      "count": 4869,
+      "bytes": 654041
     }
   ],
   "app": {
     "repository": "private",
-    "commit": "85c026f"
+    "commit": "40babb3"
   }
 }

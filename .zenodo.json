@@ -2,7 +2,7 @@
   "title": "poi — place data used by the ARound app (derived from OpenStreetMap)",
   "upload_type": "dataset",
   "description": "Mountain peaks and stations/places in South Korea that the ARound app bundles. Derived from OpenStreetMap and offered under the Open Database License (ODbL) 1.0. Contains information from OpenStreetMap. © OpenStreetMap contributors.",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "publication_date": "2026-11-11",
   "access_right": "open",
   "license": "odbl-1.0",
