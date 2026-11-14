@@ -1,6 +1,6 @@
 # poi — place data used by the mtagging (ARound) app / 장소 데이터
 
-Version: **v1.4.0** (2026-11-14)
+Version: **v1.5.0** (2026-11-14)
 
 ## English
 
@@ -30,6 +30,7 @@ This repository contains the place data (mountain peaks, stations and similar pl
 | `data/l.json` | 랜드마크(탑·등대·성곽·문화재·박물관·명소·경기장·케이블카·섬·댐·다리·폭포·해변·대학) / Landmarks (towers, lighthouses, castles, heritage sites, museums, attractions, stadiums, cable cars, islands, dams, bridges, waterfalls, beaches, universities) | 5,462 | `osm, sub, name_ko, name_en, lat, lon, size, wd` | `79875be683be…` |
 | `data/full/bus.json` | 버스정류장 / Bus stops | 67,030 | `osm, name_ko, lat, lon` | `aa467d31a217…` |
 | `data/full/life.json` | 약국·병원/의원·경찰/소방·관공서/우체국·주차장 / Pharmacies, hospitals/clinics, police/fire stations, offices/post offices and parking | 35,668 | `osm, k, name_ko, lat, lon, size` | `73174f94a0ac…` |
+| `data/full/trail.json` | 산길 지명(봉우리·고개·약수터) / Trail place names (peaks, passes, springs) | 19,761 | `osm, k, name_ko, lat, lon, ele` | `498f6a769f91…` |
 
 `lat`, `lon` are WGS84 degrees; `alt` is elevation in metres (peaks only). / `lat`·`lon`은 WGS84 도(degree), `alt`는 고도(m, 산만).
 
@@ -53,6 +54,9 @@ This repository contains the place data (mountain peaks, stations and similar pl
 - `data/full/life.json`
   - 한국어: 2026-11-08 Geofabrik 한국 추출(OpenStreetMap)의 점·면(way)·관계(relation)에서 뽑았다. k=pharmacy: amenity=pharmacy / hospital: amenity=hospital|clinic|doctors, healthcare=hospital|clinic / police: amenity=police|fire_station(이름에 경찰·파출소·지구대·치안센터·소방·119·안전센터·구조대) / office: amenity=townhall, office=government, amenity=post_office(이름에 시청·구청·군청·도청·청사·주민센터·행정복지센터·사무소·우체국 등) / parking: amenity=parking(사유지·노상 주차 제외, 이름 없는 것은 경계 상자 120m 이상 또는 수용 50대 이상만 "주차장"으로, 아파트 동 내부 시설 제외). 이름에 한글이 있는 것만 남기고(주차장 예외), 이름 끝 영문 표기를 지우고, 옛 시설 표기((구) 등)와 종류명뿐인 이름은 뺐으며, 같은 종류·이름이 100m(주차장 60m) 안이면 하나로 합쳤다. 면·관계는 꼭짓점 평균을 대표점으로 하고 size에 경계 상자 대각선(m)을 적었다. 위치만 있고 영업 여부·운영 시간은 없다. 좌표는 소수 5자리. 앱에는 같은 항목이 격자 타일로 들어 있다. 스크립트: scripts/build-poi-data.js.
   - English: Extracted from nodes, ways and relations of the Geofabrik South Korea extract of 2026-11-08 (OpenStreetMap). k=pharmacy: amenity=pharmacy; hospital: amenity=hospital|clinic|doctors, healthcare=hospital|clinic; police: amenity=police|fire_station (name must mention police/koban/fire/119/rescue words); office: amenity=townhall, office=government, amenity=post_office (name must be a city/district/county/provincial hall, community centre, office or post office); parking: amenity=parking (private and on-street excluded; unnamed lots only if their bounding box is at least 120 m or capacity at least 50, labelled "주차장"; apartment-block internal lots excluded). Only entries whose name contains Hangul are kept (parking excepted); trailing romanization is removed; former-facility markers such as (구) and names that are just the category word are dropped; the same kind and name within 100 m (60 m for parking) are merged. For ways and relations the representative point is the mean of the outline vertices and size is the bounding-box diagonal in metres. Locations only: no opening hours or whether the place is still operating. Coordinates have 5 decimals. The app ships the same records as region tiles. Script: scripts/build-poi-data.js.
+- `data/full/trail.json`
+  - 한국어: 2026-11-14 Geofabrik 한국 추출(OpenStreetMap)의 점에서 뽑았다. k=peak: natural=peak / saddle: natural=saddle / spring: natural=spring, amenity=drinking_water. 한글 이름이 있는 것만, 종류명뿐인 이름(샘터·약수터·정상 등)과 삼각점·기준점은 제외, 같은 종류·이름이 100m 안이면 하나로 합쳤다. ele는 봉우리의 OSM ele 태그(정수 m). 앱은 이정표 사진의 목적지를 위치와 맞추는 데만 쓴다.
+  - English: Extracted from nodes in the Geofabrik South Korea extract of OpenStreetMap (2026-11-14). k=peak: natural=peak / saddle: natural=saddle / spring: natural=spring, amenity=drinking_water. Only Korean-named nodes; generic names (spring, summit, etc.) and survey points are excluded; same kind and name within 100 m are merged. ele is the OSM ele tag of peaks (integer metres). The app uses it only to match signpost destinations to locations.
 
 Processing rules (cleaning, de-duplication, name normalisation) are applied when the lists are regenerated; each release records what was done in `CHANGELOG.md`. / 목록을 다시 만들 때 적용한 정제 규칙(중복 제거, 이름 정리 등)은 릴리스마다 `CHANGELOG.md`에 기록합니다.
 
