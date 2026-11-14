@@ -1,7 +1,7 @@
 {
   "name": "mtagging-poi",
-  "version": "v1.3.0",
-  "generated": "2026-11-11",
+  "version": "v1.4.0",
+  "generated": "2026-11-14",
   "license": "ODbL-1.0",
   "licenseUri": "https://opendatacommons.org/licenses/odbl/1-0/",
   "attribution": "Contains information from OpenStreetMap, which is made available here under the Open Database License (ODbL). © OpenStreetMap contributors",
@@ -22,31 +22,31 @@
     },
     {
       "path": "data/p.json",
-      "sha256": "437cd5b95132418768ca362a15a36b557fec919b759264597fe40b18fc82bb90",
-      "count": 5253,
-      "bytes": 569687
+      "sha256": "25dc87a71df66461f09cddd289a09b49f2600512395f5099244d395db4353651",
+      "count": 5060,
+      "bytes": 548717
     },
     {
       "path": "data/l.json",
-      "sha256": "4deef66595088c65dd0a2d7abe61777768cf21eeb8a54672b41768a8c525b7f2",
-      "count": 5539,
-      "bytes": 748665
+      "sha256": "79875be683be6b2114b50960b9d355b49b867360c64812255039beffd240cad2",
+      "count": 5462,
+      "bytes": 739082
     },
     {
       "path": "data/full/bus.json",
-      "sha256": "a90627d46f112b7a2d0b1db3c0942063fb72445ca67d95fcd735b594bece76cc",
-      "count": 67026,
-      "bytes": 6520583
+      "sha256": "aa467d31a21703104fd2944611356521f869ba5f6c0e9f5e52c3f52e2a7d44a2",
+      "count": 67030,
+      "bytes": 6521004
     },
     {
       "path": "data/full/life.json",
-      "sha256": "27a31eb82247df50afdb944ad4a31ba14775ff48710c8902d98382acf2cfdf1f",
-      "count": 35813,
-      "bytes": 3763120
+      "sha256": "73174f94a0acc6d56135acd94385b4958e87e108c25b351ef97c107f4bffc70f",
+      "count": 35668,
+      "bytes": 3747036
     }
   ],
   "app": {
     "repository": "private",
-    "commit": "40b8e39"
+    "commit": "52651e9"
   }
 }

@@ -1,6 +1,6 @@
 # poi — place data used by the mtagging (ARound) app / 장소 데이터
 
-Version: **v1.3.0** (2026-11-11)
+Version: **v1.4.0** (2026-11-14)
 
 ## English
 
@@ -26,10 +26,10 @@ This repository contains the place data (mountain peaks, stations and similar pl
 |---|---|---:|---|---|
 | `data/m.json` | 산(봉우리) / Mountains (peaks) | 561 | `name_ko, name_en, lat, lon, alt` | `56815e5e91cd…` |
 | `data/s.json` | 지하철·철도역 등 장소 / Subway / railway stations and similar places | 1,247 | `name_ko, name_en, lat, lon, osm` | `2ac5262b03ce…` |
-| `data/p.json` | 사찰·전망대·대피소/쉼터·화장실 / Temples, viewpoints, huts/shelters and toilets | 5,253 | `osm, k, name_ko, name_en, lat, lon, size` | `437cd5b95132…` |
-| `data/l.json` | 랜드마크(탑·등대·성곽·문화재·박물관·명소·경기장·케이블카·섬·댐·다리·폭포·해변·대학) / Landmarks (towers, lighthouses, castles, heritage sites, museums, attractions, stadiums, cable cars, islands, dams, bridges, waterfalls, beaches, universities) | 5,539 | `osm, sub, name_ko, name_en, lat, lon, size, wd` | `4deef6659508…` |
-| `data/full/bus.json` | 버스정류장 / Bus stops | 67,026 | `osm, name_ko, lat, lon` | `a90627d46f11…` |
-| `data/full/life.json` | 약국·병원/의원·경찰/소방·관공서/우체국·주차장 / Pharmacies, hospitals/clinics, police/fire stations, offices/post offices and parking | 35,813 | `osm, k, name_ko, lat, lon, size` | `27a31eb82247…` |
+| `data/p.json` | 사찰·전망대·대피소/쉼터·화장실 / Temples, viewpoints, huts/shelters and toilets | 5,060 | `osm, k, name_ko, name_en, lat, lon, size` | `25dc87a71df6…` |
+| `data/l.json` | 랜드마크(탑·등대·성곽·문화재·박물관·명소·경기장·케이블카·섬·댐·다리·폭포·해변·대학) / Landmarks (towers, lighthouses, castles, heritage sites, museums, attractions, stadiums, cable cars, islands, dams, bridges, waterfalls, beaches, universities) | 5,462 | `osm, sub, name_ko, name_en, lat, lon, size, wd` | `79875be683be…` |
+| `data/full/bus.json` | 버스정류장 / Bus stops | 67,030 | `osm, name_ko, lat, lon` | `aa467d31a217…` |
+| `data/full/life.json` | 약국·병원/의원·경찰/소방·관공서/우체국·주차장 / Pharmacies, hospitals/clinics, police/fire stations, offices/post offices and parking | 35,668 | `osm, k, name_ko, lat, lon, size` | `73174f94a0ac…` |
 
 `lat`, `lon` are WGS84 degrees; `alt` is elevation in metres (peaks only). / `lat`·`lon`은 WGS84 도(degree), `alt`는 고도(m, 산만).
 
